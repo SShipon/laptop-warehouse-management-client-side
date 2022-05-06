@@ -48,8 +48,8 @@ const Header = () => {
                   Services
                 </Nav.Link>
 
-                <Nav.Link as={Link} to="/about">
-                  About
+                <Nav.Link as={Link} to="/addItems">
+                 Add Items
                 </Nav.Link>
                 <Nav.Link as={Link} to="/contact">
                   Contact
