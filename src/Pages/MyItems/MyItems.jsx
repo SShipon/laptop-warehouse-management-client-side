@@ -4,7 +4,7 @@ import MyItem from '../MyItem/MyItem.jsx';
 const MyItems = () => {
     const [users, setUsers]=useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/user')
+        fetch('https://pure-oasis-02580.herokuapp.com/user')
         .then(res => res.json())
         .then(data =>setUsers(data) )
 
@@ -13,7 +13,7 @@ const MyItems = () => {
     const handelDeleted = id => {
         const proceed = window.confirm('are you sure')
         if (proceed) {
-            const url = `http://localhost:5000/user/${id}`
+            const url = `https://pure-oasis-02580.herokuapp.com/user/${id}`
             fetch(url, {
                 method:'DELETE'
             })

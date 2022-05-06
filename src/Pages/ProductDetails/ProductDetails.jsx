@@ -8,7 +8,7 @@ const ProductDetails = () => {
   const { itemId } = useParams();
   const [item, setItem] = useState({});
   useEffect(() => {
-    const url = `http://localhost:5000/product/${itemId}`;
+    const url = `https://pure-oasis-02580.herokuapp.com/product/${itemId}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setItem(data));
@@ -23,7 +23,7 @@ const ProductDetails = () => {
       return alert("Quantity can not be less then zero");
     }
 
-    const url = `http://localhost:5000/quantity/${itemId}`;
+    const url = `https://pure-oasis-02580.herokuapp.com/quantity/${itemId}`;
     fetch(url, {
       method: "PUT",
       headers: {
@@ -46,7 +46,7 @@ const ProductDetails = () => {
     if (addQuantity > 0) {
       quantity = parseInt(quantity) + addQuantity;
       const updateInventory = { quantity };
-      const url =` http://localhost:5000/quantity/${itemId}`;
+      const url =` https://pure-oasis-02580.herokuapp.com/quantity/${itemId}`;
       fetch(url, {
         method: "PUT",
         headers: {

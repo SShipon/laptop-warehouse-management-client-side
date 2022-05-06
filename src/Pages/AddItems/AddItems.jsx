@@ -6,7 +6,7 @@ const AddItems = () => {
     
     const onSubmit = data => {
         console.log(data)
-        const url = `http://localhost:5000/product`
+        const url = `https://pure-oasis-02580.herokuapp.com/product`
         fetch(url, {
             method: 'POST',
             headers: {
@@ -17,7 +17,7 @@ const AddItems = () => {
         })
         .then(res=>res.json())
             .then(result => {
-             const url = `http://localhost:5000/user`
+             const url = `https://pure-oasis-02580.herokuapp.com/user`
         fetch(url, {
             method: 'POST',
             headers: {
