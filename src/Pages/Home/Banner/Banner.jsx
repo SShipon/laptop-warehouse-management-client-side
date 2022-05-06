@@ -34,9 +34,7 @@ const Banner = () => {
               <p className="banner-text">
                 We now have high quality domestic and foreign laptops. You can purchase from our dealer ship the laptop of your choice for your store such as Asus Dell Hp lenovo Samsung Acer Apple Toshiba Laptop If you have an old 19th century photograph with the name and sometimes the address
               </p>
-              {/* <Link to="/about">
-                <button className="button-style">More....</button>
-              </Link> */}
+              
               <Link to="/about">
                 <Button  className="button-style-2">More....</Button>
               </Link>

@@ -1,48 +1,114 @@
-import React, { useEffect, useState } from 'react';
-import { Button } from 'react-bootstrap';
-import { useParams } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import { Button } from "react-bootstrap";
+import { Link, useParams } from "react-router-dom";
+import { toast } from "react-toastify";
+
 
 const ProductDetails = () => {
-    const { productId } = useParams()
-    const [product, setProduct] = useState({})
+  const { itemId } = useParams();
+  const [item, setItem] = useState({});
+  useEffect(() => {
+    const url = `http://localhost:5000/product/${itemId}`;
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => setItem(data));
+  }, [itemId, item]);
 
-    useEffect(() => {
-        const url = `http://localhost:5000/product/${productId}`
-        fetch(url)
-        .then(res => res.json())
-        .then(data =>setProduct(data) )
+  // quantity operations
+  const handleDelivered = (e) => {
+    e.preventDefault();
+    let quantity = item?.quantity;
+    quantity = parseInt(quantity) - 1;
+    if (quantity < 0) {
+      return alert("Quantity can not be less then zero");
+    }
 
-    }, [])
-   
-    return (
-      <div className='row'>
-        <div className=" col-sm-12 col-md-6 col-lg-4 justify-content-center">
-        <div className="card mx-auto" style={{ width: "100%" }}>
-          <img src={product.img} className="card-img-top" alt="..." />
-          <div className="card-body">
-              <h5 className="card-title"><span className='text-primary'>{product.name}</span></h5>
-               <p className="card-text"><strong>Description:</strong> {product.description}</p>
-            <p className="text-bold"><strong>Price:</strong> ${product.price}</p>
-            <p className="text-bold"><strong>Quantity:</strong> { product.quantity}</p>
+    const url = `http://localhost:5000/quantity/${itemId}`;
+    fetch(url, {
+      method: "PUT",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify({ quantity }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        setItem({ ...data, quantity: quantity });
+        toast("Successfully Delivered");
+      });
+  };
 
-               <p><strong>Supplier Name:</strong> {product.supplier}</p>
-             <Button>
-             Updated
-            </Button>
-          </div>
+  //Add quantity
+  const handleUpdateQuantity = (e) => {
+    e.preventDefault();
+    let quantity = item?.quantity;
+    const addQuantity = parseInt(e.target.quantity.value);
+    if (addQuantity > 0) {
+      quantity = parseInt(quantity) + addQuantity;
+      const updateInventory = { quantity };
+      const url =` http://localhost:5000/quantity/${itemId}`;
+      fetch(url, {
+        method: "PUT",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(updateInventory),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+          toast("quantity Updated");
+          e.target.reset();
+        });
+    } else {
+      alert("Please insert positive number of quantity");
+      e.target.reset();
+      return;
+    }
+  };
+
+  return (
+    <>
+          <div className="container w-50 h-20 justify-content-center my-5">
+     <div className="row col-sm-12">
+                 <div class="card text-center mb-3  p-4">
+                     <img  className="mx-auto" src={item.img} alt="" />
+                      <div class="card-body">
+                       <h5 class="card-title"><strong>Name:</strong>{item.name}</h5>
+                        <p class="card-text"><strong>Description:</strong>{item.description}</p>  
+                        <p class="card-text"><strong>Price:</strong>{item.price}</p>  
+                        <p class="card-text"><strong>Quantity:</strong>{item.quantity}</p>  
+                            </div>
+                        </div>
+                    </div>
+          <form onSubmit={handleUpdateQuantity} className="mb-3 d-flex ">
+            <input
+              className=""
+              type="number"
+              name="quantity"
+              placeholder="Your Quantity"
+            />
+            <Button  type="submit" className="ms-2">
+              Add Quantity
+          </Button>
+          <Button  variant="success"
+            onClick={handleDelivered}
+            className=" ms-2 text-white"
+          >
+            Delivered
+          </Button>
+          </form>
+          
+
         </div>
-      </div>
+    
+
+      <div className='my-5 text-center'>
+          <Link to='/inventory'> <Button variant="success" style={{height:'40px',width:'300px'}}>manage Inventories</Button></Link>
          </div>
-    );
+
+    </>
+  );
 };
 
 export default ProductDetails;
-
-
-/* 
-   <h5 className="card-title"><span className='text-primary'>{name}</span></h5>
-            <p className="text-bold"><strong>Price:</strong> ${price}</p>
-            <p> <strong>Quantity:</strong> { quantity}</p>
-            <p className="card-text"><strong>Description:</strong> {description}</p>
-             <p><strong>Supplier:</strong> { supplier}</p>
-*/

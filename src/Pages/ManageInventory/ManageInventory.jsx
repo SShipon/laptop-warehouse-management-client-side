@@ -6,6 +6,7 @@ import MangeInventoryProduct from '../MangeInventoryProduct/MangeInventoryProduc
 
 const ManageInventory = () => {
   const [products, setProduct] = useProduct()
+  
    const handleDeleted = id => {
     const proceed = window.confirm('Are You sure ?')
     if (proceed) {

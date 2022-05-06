@@ -35,7 +35,7 @@ const Header = () => {
                 alt=""
               />
               <i className="fs-3 fw-bold ">
-                Online<span className="word-color"> Store</span>
+                laptop<span className="word-color"> Warehouse</span>
               </i>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -59,9 +59,6 @@ const Header = () => {
                 </Nav.Link>
                   </>
                  }
-                <Nav.Link as={Link} to="/contact">
-                  Contact
-                </Nav.Link>
                 <Nav.Link as={Link} to="/blog">
                   Blog
                 </Nav.Link>

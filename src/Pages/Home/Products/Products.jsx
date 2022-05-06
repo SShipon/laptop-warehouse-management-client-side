@@ -8,7 +8,7 @@ const Products = () => {
     return (
          <div className="my-5 container">
         <h1 className="text-primary text-center my-5">
-         Product:{products.length}
+         Best 6 Products 
         </h1>
          <div className="g-5 row">
           {products.slice(0, 6).map((product) => (

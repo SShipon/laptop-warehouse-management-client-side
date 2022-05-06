@@ -12,8 +12,6 @@ const MangeInventoryProduct = ({product,handleDeleted}) => {
     navigate(`/product/${id}`)
     
   }
-
-
     
     return (
         <div className=" col-sm-12 col-md-6 col-lg-4 ">

@@ -17,8 +17,22 @@ const AddItems = () => {
         })
         .then(res=>res.json())
             .then(result => {
-            console.log(result);
+             const url = `http://localhost:5000/user`
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'content-type':'application/json'
+            },
+            body:JSON.stringify(data)
+           
         })
+        .then(res=>res.json())
+            .then(result => {
+                console.log(result);
+            
+        })
+            })
+        
 
     };
         
