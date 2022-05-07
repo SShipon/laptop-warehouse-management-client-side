@@ -21,9 +21,14 @@ const MangeInventoryProduct = ({product}) => {
             <p>Quantity: { quantity}</p>
             <p className="card-text">{description}</p>
              <p className="card-text">{supplier}</p>
-             <Button onClick={() => navigateToProductDetail(_id)}>
-             Updated
-            </Button>
+             <div className="row g-2 justify-content-between">
+             <div className="col-sm-12 col-md-6">
+            <Button onClick={() => navigateToProductDetail(_id)}>Updated</Button>
+             </div>
+             <div className="col-sm-12 col-md-6">
+              <Button variant="danger"><i class="fa-solid fa-trash"></i> Deleted</Button>
+            </div>
+               </div>
           </div>
         </div>
       </div>

@@ -30,7 +30,7 @@ const GoogleSign = ({ from }) => {
     <div className="row g-2">
       {errorElement}
       <div className="col-sm-12 col-md-6">
-        <Button
+        <Button variant="success"
           onClick={() => signInWithGoogle()}
           className="btn btn-primary w-45"
         >
@@ -40,7 +40,7 @@ const GoogleSign = ({ from }) => {
       </div>
 
       <div className="col-sm-12 col-md-6">
-        <Button
+        <Button variant="success"
           onClick={() => signInWithGithub()}
           className="btn btn-primary w-45"
         >

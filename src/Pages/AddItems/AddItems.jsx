@@ -29,19 +29,19 @@ const AddItems = () => {
     <h3 className='text-center my-2'>Add Product</h3>
      <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
          <label htmlFor="">Name</label>
-        <input className='mb-2' placeholder='Your Name'  {...register("Name", { required: true, maxLength: 20 })} /> 
+        <input className='mb-2' placeholder='Your Name'  {...register("Name", { required: true, maxLength: 20 })} required/> 
          <label htmlFor="">Email</label>
-        <input className='mb-2' placeholder='Your Email'  {...register("email", { required: true, maxLength: 20 })} /> 
+        <input className='mb-2' placeholder='Your Email'  {...register("email", { required: true, maxLength: 20 })} required/> 
          <label htmlFor="">Product Name</label>
-        <input className='mb-2' placeholder='Product Name'  {...register("Name", { required: true, maxLength: 20 })} /> 
+        <input className='mb-2' placeholder='Product Name'  {...register("Name", { required: true, maxLength: 20 })} required /> 
          <label htmlFor="">Images URL </label>
            <input className='mb-2' placeholder='Photo URL'  type="img" {...register("img")} />
            <label htmlFor="">Description</label>
-           <textarea className='mb-2' placeholder='Description'  {...register("description")} />
+           <textarea className='mb-2' placeholder='Description'  {...register("description")} required/>
            <label htmlFor="">Price</label>
-        <input className='mb-2' placeholder='Price'  type="number" {...register("price")} />
+        <input className='mb-2' placeholder='Price'  type="number" {...register("price")} required/>
         <label htmlFor="">Quantity</label>
-        <input className='mb-2' placeholder='Quantity'  type="number" {...register("quantity")} />
+        <input className='mb-2' placeholder='Quantity'  type="number" {...register("quantity")} required/>
        <input className='btn-hero' type="submit" value='Add Items' />
     </form>
 </div>

@@ -22,6 +22,7 @@ const ProductDetails = () => {
           <div className="card-body">
             <h5 className="card-title">{product.name}</h5>
             <p className="text-bold">Price: $ {product.price}</p>
+            <p className="text-bold">Quantity: $ {product.quantity}</p>
             <p className="card-text">{product.description}</p>
              <Button>
              Updated

@@ -6,6 +6,7 @@ import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 
 import GoogleSign from "../GoogleSign/GoogleSign.jsx";
 import auth from "../../../firebase.init.jsx";
+import RegisterAnimation from "../RegisterAnimation/RegisterAnimation.jsx";
  
  
 const Register = () => {
@@ -83,8 +84,8 @@ const Register = () => {
                   />
                 </Form.Group>
                 <p className="text-error">{error}</p>
-                <Button variant="primary" type="submit">
-                  Register
+                <Button variant="success" type="submit">
+                  Register <i class="fa-solid fa-registered"></i>
                 </Button>
               </Form>
               <p>
@@ -102,7 +103,7 @@ const Register = () => {
             </div>
           </Col>
           <Col md={6} xs={12} className="">
-                      <p>this is</p>
+              <RegisterAnimation/>
           </Col>
         </Row>
       </Container>

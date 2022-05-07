@@ -10,6 +10,8 @@ import RequireAuth from './Pages/Login/RequireAuth/RequireAuth.jsx';
 import ProductDetails from './Pages/ProductDetails/ProductDetails.jsx';
 import ManageInventory from './Pages/ManageInventory/ManageInventory.jsx';
 import MyItems from './Pages/MyItems/MyItems.jsx';
+import Footer from './Pages/Shared/Footer/Footer.jsx';
+import NotFound from './Pages/Shared/NotFound/NotFound.jsx';
 
 function App() {
   return (
@@ -30,7 +32,9 @@ function App() {
         </RequireAuth>}></Route>
         <Route path='/myItems' element={<MyItems></MyItems>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }

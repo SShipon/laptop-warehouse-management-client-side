@@ -10,6 +10,7 @@ import Loading from "../../Shared/Loading/Loading";
 import GoogleSign from "../GoogleSign/GoogleSign.jsx";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import LoginAnimation from "../LoginAnimation/LoginAnimation.jsx";
 
 const Login = () => {
    const emailRef = useRef("");
@@ -63,7 +64,7 @@ const Login = () => {
       <Container>
         <Row className="d-flex align-items-center my-5 ">
           <Col md={6} xs={12}>
-            <p>img</p>
+            <LoginAnimation/>
           </Col>
           <Col md={6} xs={12} className="">
             <div className="mx-auto w-75">
@@ -93,8 +94,8 @@ const Login = () => {
                 </Form.Group>
                 <p style={{ color: "red" }}>{error?.message}</p>
                 {loading && <p>Loading .....</p>}
-                <Button variant="primary" type="submit">
-                  Login
+                <Button variant="success" type="submit">
+                  Login <i class="fa-solid fa-arrow-right-to-bracket"></i>
                 </Button>
               </Form>
               <p>

@@ -2,13 +2,13 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 const firebaseConfig = {
-  apiKey: "AIzaSyB9IEJAz7we7VKKZIVvkBVKPf1c-C-FTJ8",
-  authDomain: "grocery-store-management.firebaseapp.com",
-  projectId: "grocery-store-management",
-  storageBucket: "grocery-store-management.appspot.com",
-  messagingSenderId: "307652845494",
-  appId: "1:307652845494:web:f32f2cb6a592aa0005ab17",
-  measurementId: "G-2SV11MKCG4"
+  apiKey:process.env.REACT_APP_apiKey,
+  authDomain:process.env.REACT_APP_authDomain,
+  projectId:process.env.REACT_APP_projectId,
+  storageBucket:process.env.REACT_APP_storageBucket,
+  messagingSenderId:process.env.REACT_APP_messagingSenderId,
+  appId:process.env.REACT_APP_appId,
+  measurementId:process.env.REACT_APP_measurementId,
 };
 
 // Initialize Firebase
