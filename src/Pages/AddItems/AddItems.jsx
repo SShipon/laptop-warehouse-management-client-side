@@ -2,11 +2,11 @@ import React from 'react';
 import { useForm } from "react-hook-form";
 import './AddItems.css';
 const AddItems = () => {
-    const { register, handleSubmit } = useForm();
+    const { register, handleSubmit,reset } = useForm();
     
     const onSubmit = data => {
         console.log(data)
-        const url = `https://pure-oasis-02580.herokuapp.com/product`
+        const url = `https://dry-temple-28116.herokuapp.com/product`
         fetch(url, {
             method: 'POST',
             headers: {
@@ -17,7 +17,7 @@ const AddItems = () => {
         })
         .then(res=>res.json())
             .then(result => {
-             const url = `https://pure-oasis-02580.herokuapp.com/user`
+             const url = `https://dry-temple-28116.herokuapp.com/user`
         fetch(url, {
             method: 'POST',
             headers: {
@@ -28,8 +28,8 @@ const AddItems = () => {
         })
         .then(res=>res.json())
             .then(result => {
-                console.log(result);
-            
+            console.log(result);
+              reset()
         })
             })
         

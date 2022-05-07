@@ -10,7 +10,7 @@ const ManageInventory = () => {
    const handleDeleted = id => {
     const proceed = window.confirm('Are You sure ?')
     if (proceed) {
-      const url = `https://pure-oasis-02580.herokuapp.com/product/${id}`
+      const url = `https://dry-temple-28116.herokuapp.com/product/${id}`
       fetch(url, {
         method:'DELETE'
       })
