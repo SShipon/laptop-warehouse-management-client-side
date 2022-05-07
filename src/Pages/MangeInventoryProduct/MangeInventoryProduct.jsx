@@ -1,16 +1,18 @@
+
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
-const Product = ({ product }) => {
-  const { _id, img, name, description, price,quantity,supplier } = product;
+const MangeInventoryProduct = ({product}) => {
+     const { _id, img, name, description, price,quantity,supplier } = product;
   const navigate = useNavigate()
   const navigateToProductDetail = id => {
     navigate(`/product/${id}`)
     
   }
+    
     return (
-         <div className=" col-sm-12 col-md-6 col-lg-4 ">
+        <div className=" col-sm-12 col-md-6 col-lg-4 ">
         <div className="card" style={{ width: "100%" }}>
           <img src={img} className="card-img-top" alt="..." />
           <div className="card-body">
@@ -28,4 +30,4 @@ const Product = ({ product }) => {
     );
 };
 
-export default Product;
+export default MangeInventoryProduct;
