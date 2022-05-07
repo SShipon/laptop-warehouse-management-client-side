@@ -1,0 +1,64 @@
+[
+  {
+   
+    "name": "Apple vivo book i5 11th Gen",
+    "description": "all the different laptops types starting from gaming to content creating. These laptops are built to withstand anything and continuously provide you with the same ",
+    "price":"140",
+    "quantity": "150",
+    "supplier": "Jon doe",
+    "img": "https://i.ibb.co/8zxK4Lz/apple.jpg"
+   
+  },
+  {
+   
+    "name": "Samsung Galaxy Book Pro 360 Core i7 ",
+    "description": "all the different laptops types starting from gaming to content creating. These laptops are built to withstand anything and continuously provide you with the same",
+    "price":"150",
+    "quantity": "150",
+    "supplier": "Jon doe",
+    "img": "https://i.ibb.co/pvQYj09/dell.jpg"
+   
+  },
+  {
+  
+    "name": "Acer One 14 Z2-493 Ryzen 3 3250U",
+    "description": "all the different laptops types starting from gaming to content creating. These laptops are built to withstand anything and continuously provide you with the same",
+    "price":"110",
+    "quantity": "150",
+    "supplier": "Jon doe",
+    "img": "https://i.ibb.co/gZP09js/download-3.jpg"
+   
+  },
+  {
+
+    "name": "Asus Vivobook X515MA Celeron N4020 15.6",
+    "description":"all the different laptops types starting from gaming to content creating. These laptops are built to withstand anything and continuously provide you with the same",
+    "price":"120",
+    "quantity": "150",
+    "supplier": "Jon doe",
+    "img": "https://i.ibb.co/fvJJnxg/download-4.jpg"
+   
+  },
+  {
+  
+    "name": "HP i3 11th Gen 15.6",
+    "description":"all the different laptops types starting from gaming to content creating. These laptops are built to withstand anything and continuously provide you with the same",
+    "price":"190",
+    "quantity": "150",
+    "supplier": "Jon doe",
+    "img": "https://i.ibb.co/Vm2pg8Q/download-6.jpg"
+   
+  },
+  {
+ 
+    "name": "Lenovo IdeaPad Slim 3i 15IGL",
+    "description":"all the different laptops types starting from gaming to content creating. These laptops are built to withstand anything and continuously provide you with the same",
+    "price":"120",
+    "quantity": "150",
+    "supplier": "Jon doe",
+    "img": "https://i.ibb.co/ww713Rp/download-5.jpg"
+   
+  }
+]
+
+
