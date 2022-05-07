@@ -18,7 +18,7 @@ const MangeInventoryProduct = ({product}) => {
           <div className="card-body">
             <h5 className="card-title">{name}</h5>
             <p className="text-bold">Price: $ {price}</p>
-            <p>quantity: { quantity}</p>
+            <p>Quantity: { quantity}</p>
             <p className="card-text">{description}</p>
              <p className="card-text">{supplier}</p>
              <Button onClick={() => navigateToProductDetail(_id)}>

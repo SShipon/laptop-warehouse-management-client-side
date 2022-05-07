@@ -44,7 +44,10 @@ const Header = () => {
                 <Nav.Link as={Link} to="/home">
                   Home
                 </Nav.Link>
-                <Nav.Link as={Link} to="/inventory">
+                {
+                  user?.email &&
+                  <>
+                  <Nav.Link as={Link} to="/inventory">
                   Manage Inventory
                 </Nav.Link>
 
@@ -54,6 +57,8 @@ const Header = () => {
                 <Nav.Link as={Link} to="/myItems">
                  My Items
                 </Nav.Link>
+                  </>
+                 }
                 <Nav.Link as={Link} to="/contact">
                   Contact
                 </Nav.Link>

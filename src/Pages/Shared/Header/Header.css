@@ -7,7 +7,9 @@
 .style-color{
     background-color: rgb(12, 12, 12);
 }
-
+a{
+  color: #ffffff !important;
+}
 .logout {
   font-size: large;
   font-weight: 600;
