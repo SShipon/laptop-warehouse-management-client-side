@@ -16,6 +16,8 @@
 # React Js 
 # React Router Dom
 # axios 
+# typeWriter
+# React lottes
 # react bootstrap
 # Node.js
 # express.js
