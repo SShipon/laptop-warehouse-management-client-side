@@ -7,7 +7,7 @@ const ItemDetail = () => {
   const { itemId } = useParams();
   const [item, setItem] = useState({});
   useEffect(() => {
-    const url = `https://dry-temple-28116.herokuapp.com/product/${itemId}`;
+    const url = `https://hidden-plateau-84306.herokuapp.com/product/${itemId}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setItem(data));
@@ -22,7 +22,7 @@ const ItemDetail = () => {
       return alert("Quantity can not be less then zero");
     }
 
-    const url = `https://dry-temple-28116.herokuapp.com/quantity/${itemId}`;
+    const url = `https://hidden-plateau-84306.herokuapp.com/quantity/${itemId}`;
     fetch(url, {
       method: "PUT",
       headers: {
@@ -45,7 +45,7 @@ const ItemDetail = () => {
     if (addQuantity > 0) {
       quantity = parseInt(quantity) + addQuantity;
       const updateInventory = { quantity };
-      const url = `https://dry-temple-28116.herokuapp.com/quantity/${itemId}`;
+      const url = `https://hidden-plateau-84306.herokuapp.com/quantity/${itemId}`;
       fetch(url, {
         method: "PUT",
         headers: {
@@ -76,7 +76,7 @@ const ItemDetail = () => {
           <div className="d-flex justify-content-between">
             <h5 className="fw-bold">{item.price}$</h5>
             <p>
-              <small>Product Stock : <strong>{item.quantity}</strong></small>
+              <small>Product Stock : {item.quantity}p</small>
             </p>
             <p>
               <small>Seller : {item.supplier}</small>

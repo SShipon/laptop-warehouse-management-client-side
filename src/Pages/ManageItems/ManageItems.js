@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import useProduct from "../../Hooks/useProduct.jsx";
+import useItems from "../../Hooks/useItems";
 import AllItems from "../AllItems/AllItems";
 import "./ManageItems.css";
 
 const ManageItems = () => {
-  const [items, setItems] = useProduct();
+  const [items, setItems] = useItems();
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you sure?");
     if (proceed) {
-      const url = `https://dry-temple-28116.herokuapp.com/product/${id}`;
+      const url = `https://hidden-plateau-84306.herokuapp.com/product/${id}`;
       fetch(url, {
         method: "DELETE",
       })

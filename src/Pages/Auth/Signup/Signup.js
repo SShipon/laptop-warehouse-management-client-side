@@ -8,6 +8,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Col, Container, Row } from 'react-bootstrap';
 import RegisterAnimation from '../RegisterAnimation/RegisterAnimation.jsx';
 
+
 const Signup = () => {
     const [userInfo, setUserInfo] = useState({
         email: "",
@@ -108,13 +109,13 @@ const Signup = () => {
     return (
 
         <Container>
-            <Row className='d-flex align-items-center my-5'>
-                <Col md={6}>
-                   <RegisterAnimation></RegisterAnimation>
+            <Row className="d-flex align-items-center my-5">
+                <Col md={6} xs={12}>
+                  <RegisterAnimation></RegisterAnimation>
                 </Col>
-                <Col md={6}>
+                <Col md={6} xs={12}>
                    <div className='login-container'>
-            <div className='login-title'>SIGNUP</div>
+            <div className='login-title'>Plages Register</div>
             <form className='login-form' onSubmit={handleLogin}>
                 <input type="text" placeholder='Your Email' onChange={handleEmailChange} />
                 {errors?.email && <p className='error-message'>{errors.email}</p>}
@@ -128,10 +129,10 @@ const Signup = () => {
                 <ToastContainer></ToastContainer>
             </form>
             <button onClick={handleGoogleSignIn}>Google SignIn</button>
-          </div>
-         </Col>
-    </Row>
-</Container>
+        </div>
+                </Col>
+            </Row>
+        </Container>
     );
 };
 

@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
+import useItems from "../../../Hooks/useItems";
 import ShowMyItems from "../ShowMyItems/ShowMyItems";
 import "./MyItems.css";
 
@@ -12,10 +13,12 @@ const MyItems = () => {
 
   const [user] = useAuthState(auth);
 
+  // const [items, setItems] = useItems();
+
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you sure?");
     if (proceed) {
-      const url = `https://dry-temple-28116.herokuapp.com/product/${id}`;
+      const url = `https://hidden-plateau-84306.herokuapp.com/product/${id}`;
       fetch(url, {
         method: "DELETE",
       })
@@ -34,7 +37,7 @@ const MyItems = () => {
     const email = user.email;
 
     const getItems = async () => {
-      const url = `https://dry-temple-28116.herokuapp.com/myItems?email=${email}`;
+      const url = `https://hidden-plateau-84306.herokuapp.com/myItems?email=${email}`;
       try {
         const { data } = await axios.get(url, {
           headers: {

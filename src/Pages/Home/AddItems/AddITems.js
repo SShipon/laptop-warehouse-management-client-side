@@ -14,7 +14,7 @@ const AddITems = () => {
     data.email = user?.email;
 
     console.log(data);
-    const url = `https://dry-temple-28116.herokuapp.com/product`;
+    const url = `https://hidden-plateau-84306.herokuapp.com/product`;
     fetch(url, {
       method: "POST",
       headers: {

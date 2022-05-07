@@ -5,12 +5,12 @@ import {
   useSignInWithEmailAndPassword,
   useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
+import auth from "../../../firebase.init";
 import "./Login.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Loding from "../../Loding/Loding";
-import auth from "../../../firebase.init.jsx";
 import { Col, Container, Row } from "react-bootstrap";
 import LoginAnimation from "../LoginAnimation/LoginAnimation.jsx";
 
@@ -68,7 +68,7 @@ const Login = () => {
 
   useEffect(() => {
     if (user) {
-      const url = "https://dry-temple-28116.herokuapp.com/login";
+      const url = "https://hidden-plateau-84306.herokuapp.com/login";
       fetch(url, {
         method: "POST",
         body: JSON.stringify({
@@ -132,9 +132,9 @@ const Login = () => {
 
   return (
     <Container>
-      <Row className="d-flex align-items-center my-5">
-        <Col md={6}>
-          <div className="login-container">
+         <Row className="d-flex align-items-center my-5">
+        <Col md={6} xs={12}>
+              <div className="login-container">
       <div className="login-title">LOGIN</div>
       <form className="login-form" onSubmit={handleLogin}>
         <input
@@ -175,14 +175,13 @@ const Login = () => {
           Sign up
         </Link>
       </p>
-    </div>
+    </div>  
         </Col>
-        <Col md={6}>
-          <LoginAnimation></LoginAnimation>
+        <Col md={6} xs={12}>
+           <LoginAnimation></LoginAnimation>   
         </Col>
-      
-      </Row> 
-   </Container>
+         </Row>
+      </Container>
   );
 };
 

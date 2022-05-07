@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 
-const useProduct = () => {
+const useItems = () => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch("https://dry-temple-28116.herokuapp.com/product")
+    fetch("https://hidden-plateau-84306.herokuapp.com/product")
       .then((res) => res.json())
       .then((data) => setItems(data));
   }, []);
   return [items, setItems];
 };
 
-export default useProduct;
+export default useItems;
