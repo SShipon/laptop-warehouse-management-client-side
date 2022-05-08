@@ -49,26 +49,26 @@ const Footer = () => {
             <h4>FOLLOW</h4>
             <ul className="list-unstyled font-awsome ">
               <li>
-                <i class="fas fa-home"></i> Dhaka dhanmondi
+                <i className="fas fa-home"></i> Dhaka dhanmondi
               </li>
               <li>
-                <i class="fas fa-home"></i> Comiila Kandirpar{" "}
+                <i className="fas fa-home"></i> Comiila Kandirpar{" "}
               </li>
               <li>
-                <i class="fas fa-phone"></i> +8801703059461
+                <i className="fas fa-phone"></i> +8801703059461
               </li>
               <li>
-                <i class="fas fa-question-circle"></i> +4574754
+                <i className="fas fa-question-circle"></i> +4574754
               </li>
               <li>
                 <a href="https://www.facebook.com/mdshipon.chowdhury.940">
-                  <i class="fab fa-facebook"></i>
+                  <i className="fab fa-facebook"></i>
                 </a>{" "}
                 Facebook
               </li>
               <li>
                 <a href="https://www.linkedin.com/in/md-shipon-214207214/">
-                  <i class="fab fa-linkedin-in"></i>
+                  <i className="fab fa-linkedin-in"></i>
                 </a>{" "}
                 Linkedin
               </li>
