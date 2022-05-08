@@ -1,0 +1,41 @@
+.bg-color-1{
+    background-color: rgb(202, 209, 207) !important;
+}
+.bg-color-1:hover{
+    background-color: rgb(195, 212, 212) !important;
+    color: rgb(8, 7, 7);
+}
+.bg-color-2{
+   background-color: rgb(202, 209, 207) !important;
+}
+.bg-color-2:hover{
+    background-color: rgb(174, 229, 229) !important;
+    color: rgb(8, 7, 7);
+}
+.bg-color-3{
+   background-color: rgb(202, 209, 207) !important;
+}
+.bg-color-3:hover{
+    background-color: rgb(174, 229, 229) !important;
+    color: rgb(8, 7, 7);
+}
+.bg-color-4{
+   background-color: rgb(202, 209, 207) !important;
+}
+.bg-color-4:hover{
+    background-color: rgb(174, 229, 229) !important;
+    color: rgb(8, 7, 7);
+}
+.bg-color-5{
+   background-color: rgb(202, 209, 207) !important;
+}
+.bg-color-5:hover{
+    background-color: rgb(174, 229, 229) !important;
+    color: rgb(8, 7, 7);
+}
+
+
+
+.main-container i{
+   font-size: 20px !important;
+}

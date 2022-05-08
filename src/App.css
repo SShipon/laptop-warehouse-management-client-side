@@ -23,6 +23,10 @@
   color: white;
 }
 
+.text-color{
+  color: #115364 !important;
+}
+
 .App-link {
   color: #61dafb;
 }

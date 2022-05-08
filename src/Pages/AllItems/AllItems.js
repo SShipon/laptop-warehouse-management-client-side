@@ -1,12 +1,13 @@
 import React from 'react';
 import './AllITems.css'
-
+import Roll from 'react-reveal/Roll';
 const AllItems = ({item,handleDelete}) => {
     const {_id, name, price, img } = item;
    
 
     return (
-        <div className='d-flex align-items-center justify-content-center allItem-info'>
+        <Roll left>
+            <div className='d-flex align-items-center justify-content-center allItem-info'>
             <div className='items-img'>
                 <img className='' src={img} alt="" srcset="" />
             </div>
@@ -18,6 +19,7 @@ const AllItems = ({item,handleDelete}) => {
                 </div>
             </div>
         </div>
+        </Roll>
     );
 };
 

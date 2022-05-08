@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 // import { Link } from "react-router-dom";
 import "./Item.css";
-
+import Rotate from 'react-reveal/Rotate';
 const Item = ({ item }) => {
   const {_id, name, description, price, quantity, supplier, img } = item;
   const navigate = useNavigate();
@@ -10,7 +10,8 @@ const Item = ({ item }) => {
     navigate(`/item/${id}`)
   }
   return (
-    <div className="g-5 col-sm-12 col-md-6 col-lg-4">
+    <Rotate top left>
+    <div className="g-5 col-sm-12 col-md-6 col-lg-4 ">
       <div className="items-container card p-0">
         <img className="item-img" src={img} alt="" srcset="" />
         <div className="card-body">
@@ -28,7 +29,8 @@ const Item = ({ item }) => {
           Update
         </button>
       </div>
-    </div>
+      </div>
+      </Rotate>
   );
 };
 

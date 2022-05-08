@@ -15,7 +15,7 @@ const Items = () => {
     return (
         <div>
             <div className='container'>
-                <h3 className='text-center'>Best 6 Products</h3>
+                <h3 className='text-center my-5 text-color'>Best 6 Products</h3>
                 <div className=' row items-section'>
                     {
                         items.slice(0,6).map(item => <Item key={item._id} item={item}></Item>)

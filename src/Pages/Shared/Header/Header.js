@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import './Header.css'
-import logo from '../../../images/logo.png'
 import { Link } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
@@ -17,7 +16,7 @@ const Header = () => {
     return (
         <Navbar className='navbar' bg="" expand="lg" sticky='top'>
   <Container>
-    <Navbar.Brand as={Link} to="/"><img src={logo} height="40" alt="" srcset="" /></Navbar.Brand>
+    <Navbar.Brand as={Link} to="/"><img src='https://i.ibb.co/4KdGnCc/images-removebg-preview.png' height="40" alt="" srcset="" /> Laptop House</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
@@ -25,7 +24,7 @@ const Header = () => {
       <Nav>
       <Nav.Link as={Link} to="/">Home</Nav.Link>
               <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
-              <Nav.Link as={Link} to="//about">AboutUs</Nav.Link>
+              <Nav.Link as={Link} to="/about">About</Nav.Link>
         {
           user && <>
           <Nav.Link as={Link} to="/manageItems">Manage Items</Nav.Link>
@@ -35,11 +34,11 @@ const Header = () => {
         }
         {
           user?
-          <button className='btn btl-link fw-bold text-decoration-none' onClick={handleSignOut}>SignOut</button>
+          <button className='btn-hero' onClick={handleSignOut}>SignOut</button>
           :
           <Nav.Link className='fw-bold' as={Link} to="/login">Login</Nav.Link>
         }
-        <Nav.Link>{user?.email.slice(0,10)}</Nav.Link>
+        <Nav.Link>{user?.email.slice(0,15)}</Nav.Link>
     </Nav>
     </Navbar.Collapse>
   </Container>

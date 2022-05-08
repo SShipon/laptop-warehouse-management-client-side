@@ -76,7 +76,7 @@ const ItemDetail = () => {
           <div className="d-flex justify-content-between">
             <h5 className="fw-bold">{item.price}$</h5>
             <p>
-              <small>Product Stock : {item.quantity}p</small>
+              <small>Quantity: <strong>{item.quantity}</strong></small>
             </p>
             <p>
               <small>Seller : {item.supplier}</small>

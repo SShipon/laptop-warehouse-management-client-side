@@ -43,7 +43,7 @@ const Clients = () => {
   return (
     <>
       <Container className='text-center my-5'>
-     <h2>CLIENT SAYS</h2>
+     <h2 className='text-color'>CLIENT SAYS</h2>
       </Container>
       <Slider {...settings}>
         <div className=''>

@@ -6,7 +6,7 @@
     /* border-radius: 8px; */
     padding: 40px;
     box-sizing: border-box;
-    background: #fefefeb1;
+    background: #fefefeb6;
     /* box-shadow: 14px 14px 20px #f5dbcf, -14px -14px 20px white; */
 }
 
@@ -16,7 +16,7 @@
     margin-top: 10px;
     font-weight: 900;
     font-size: 1.8rem;
-    color: #338A7B;
+    color: #0e2823;
     letter-spacing: 1px;
 }
 
@@ -39,13 +39,13 @@
 
 .login-container label {
     margin-bottom: 4px;
-    color: rgb(230, 217, 217);
+    color: rgb(237, 231, 231);
     margin: 15px 0 5px 5px;
     
 }
 
 .login-container input::placeholder {
-    color: rgb(122, 113, 113);
+    color: rgb(90, 85, 85);
 }
 
 .login-container input,
@@ -64,7 +64,7 @@
 .login-container button {
     color: white;
     margin-top: 20px;
-    background: #3db5a1;
+    background: #101a18;
     height: 40px;
     /* border-radius: 8px; */
     cursor: pointer;
