@@ -10,11 +10,11 @@ const Banner = () => {
         <Container>
           <Row className="d-flex align-items-center my-5 ">
             <Col md={7} xs={12}>
-              <h2 className="text-content">
+              <h2 className="banner-title">
                 <TypeWriterEffect
         textStyle={{
           fontFamily: 'Red Hat Display',
-          color: '#3F3D56',
+          color: 'rgb(22, 162, 139)',
           fontWeight: 350,
           fontSize: '30px',
         }}

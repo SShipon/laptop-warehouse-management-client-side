@@ -29,11 +29,11 @@ const AddItems = () => {
     <h3 className='text-center my-2'>Add Product</h3>
      <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
          <label htmlFor="">Name</label>
-        <input className='mb-2' placeholder='Your Name'  {...register("Name", { required: true, maxLength: 20 })} required/> 
+         <input className='mb-2' placeholder='Supplier'  type="name" {...register("supplier")} required/> 
          <label htmlFor="">Email</label>
         <input className='mb-2' placeholder='Your Email'  {...register("email", { required: true, maxLength: 20 })} required/> 
          <label htmlFor="">Product Name</label>
-        <input className='mb-2' placeholder='Product Name'  {...register("Name", { required: true, maxLength: 20 })} required /> 
+        <input className='mb-2' placeholder='Product Name'  {...register("name", { required: true, maxLength: 20 })} required /> 
          <label htmlFor="">Images URL </label>
            <input className='mb-2' placeholder='Photo URL'  type="img" {...register("img")} />
            <label htmlFor="">Description</label>

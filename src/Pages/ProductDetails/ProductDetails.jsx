@@ -20,10 +20,12 @@ const ProductDetails = () => {
         <div className="card mx-auto" style={{ width: "100%" }}>
           <img src={product.img} className="card-img-top" alt="..." />
           <div className="card-body">
-            <h5 className="card-title">{product.name}</h5>
-            <p className="text-bold">Price: $ {product.price}</p>
-            <p className="text-bold">Quantity: $ {product.quantity}</p>
-            <p className="card-text">{product.description}</p>
+              <h5 className="card-title"><span className='text-primary'>{product.name}</span></h5>
+               <p className="card-text"><strong>Description:</strong> {product.description}</p>
+            <p className="text-bold"><strong>Price:</strong> ${product.price}</p>
+            <p className="text-bold"><strong>Quantity:</strong> { product.quantity}</p>
+
+               <p><strong>Supplier Name:</strong> {product.supplier}</p>
              <Button>
              Updated
             </Button>
@@ -35,3 +37,12 @@ const ProductDetails = () => {
 };
 
 export default ProductDetails;
+
+
+/* 
+   <h5 className="card-title"><span className='text-primary'>{name}</span></h5>
+            <p className="text-bold"><strong>Price:</strong> ${price}</p>
+            <p> <strong>Quantity:</strong> { quantity}</p>
+            <p className="card-text"><strong>Description:</strong> {description}</p>
+             <p><strong>Supplier:</strong> { supplier}</p>
+*/

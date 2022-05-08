@@ -14,11 +14,11 @@ const Product = ({ product }) => {
         <div className="card" style={{ width: "100%" }}>
           <img src={img} className="card-img-top" alt="..." />
           <div className="card-body">
-            <h5 className="card-title">{name}</h5>
-            <p className="text-bold">Price: $ {price}</p>
-            <p>Quantity: { quantity}</p>
-            <p className="card-text">{description}</p>
-             <p className="card-text">Supplier: {supplier}</p>
+            <h5 className="card-title text-">{name}</h5>
+            <p className="text-bold"><strong>Price:</strong> ${price}</p>
+            <p><strong>Quantity:</strong> { quantity}</p>
+            <p className="card-text"><strong>Description:</strong> {description}</p>
+             <p className="card-text"><strong>Supplier Name: </strong>{supplier}</p>
              <Button onClick={() => navigateToProductDetail(_id)}>
              Updated
             </Button>

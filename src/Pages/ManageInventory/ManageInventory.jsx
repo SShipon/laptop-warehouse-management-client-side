@@ -5,7 +5,22 @@ import { useProduct } from '../../Hooks/useProducts.jsx';
 import MangeInventoryProduct from '../MangeInventoryProduct/MangeInventoryProduct.jsx';
 
 const ManageInventory = () => {
-    const [products] = useProduct()
+  const [products, setProduct] = useProduct()
+   const handleDeleted = id => {
+    const proceed = window.confirm('Are You sure ?')
+    if (proceed) {
+      const url = `http://localhost:5000/product/${id}`
+      fetch(url, {
+        method:'DELETE'
+      })
+        .then(res => res.json())
+        .then(data => {
+          console.log(data);
+          const remaining = products.filter(product => product._id !== id)
+          setProduct(remaining)
+      })
+    }
+  }
     return (
       <>
           <div className="my-5 container">
@@ -14,7 +29,9 @@ const ManageInventory = () => {
         </h1>
          <div className="g-5 row">
           {products.map((product) => (
-            <MangeInventoryProduct key={product._id} product={product}></MangeInventoryProduct>
+            <MangeInventoryProduct key={product._id} product={product}
+             handleDeleted={handleDeleted}
+            ></MangeInventoryProduct>
           ))}
         </div>
       </div>
