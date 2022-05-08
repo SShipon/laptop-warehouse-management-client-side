@@ -28,3 +28,5 @@
 * react-hook-form 
 * react-firebase-hooks 
 * react-bootstrap
+* react-revel
+* react-router-dom
