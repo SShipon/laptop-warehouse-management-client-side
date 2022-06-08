@@ -3,11 +3,15 @@ import { Button, Col, Container, Row } from 'react-bootstrap';
 import TypeWriterEffect from 'react-typewriter-effect';
 import { Link } from 'react-router-dom';
 import BannerAnimation from '../BannerAnimation/BannerAnimation.jsx';
-import'./Banner.css'
+import './Banner.css'
+
+
 const Banner = () => {
-    return (
-      <>
-        <Container>
+    
+  return (
+      
+        
+    < Container>
           <Row className="d-flex align-items-center my-5 ">
             <Col md={7} xs={12}>
               <h2 className="banner-title">
@@ -44,7 +48,6 @@ const Banner = () => {
             </Col>
           </Row>
         </Container>
-      </>
     );
 };
 

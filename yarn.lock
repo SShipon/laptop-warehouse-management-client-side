@@ -9318,6 +9318,14 @@ react-transition-group@^4.4.2:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
+react-tsparticles@1.39.2:
+  version "1.39.2"
+  resolved "https://registry.yarnpkg.com/react-tsparticles/-/react-tsparticles-1.39.2.tgz#8706f264b9775a321f0b0e1d3c436e174319a6ec"
+  integrity sha512-KDMLhKHuLQS3M6tKiS9fAt9dWWEuckv/Bhh3kqGAXwS9JnA7UGklav4WrtKlZE8fKTQ+c1yIRPfX2GD+AaNZ3g==
+  dependencies:
+    fast-deep-equal "^3.1.3"
+    tsparticles "^1.39.2"
+
 react-typewriter-effect@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/react-typewriter-effect/-/react-typewriter-effect-1.1.0.tgz"
@@ -10651,6 +10659,16 @@ tslib@^2.0.3, tslib@^2.1.0:
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.4.0.tgz"
   integrity sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==
 
+tsparticles-engine@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/tsparticles-engine/-/tsparticles-engine-2.0.6.tgz#27e85d8d014a2d9435ffc9a2c7efd570baf6dc64"
+  integrity sha512-qsAMp68No1ncbFQbyjILrVtS9LeNTtBmxPa91COvHq4iLELReUjVxXTWfLWi0+xczTbdpNPRPx92r0V3xlqeHw==
+
+tsparticles@^1.39.2:
+  version "1.43.1"
+  resolved "https://registry.yarnpkg.com/tsparticles/-/tsparticles-1.43.1.tgz#1f6b37ee41b6ab043d66a0e20bfe0855a1aea006"
+  integrity sha512-6EuHncwqzoyTlUxc11YH8LVlwVUgpYaZD0yMOeA2OvRqFZ9VQV8EjjQ6ZfXt6pfGA1ObPwU929jveFatxwTQkg==
+
 tsutils@^3.21.0:
   version "3.21.0"
   resolved "https://registry.npmjs.org/tsutils/-/tsutils-3.21.0.tgz"
@@ -10759,6 +10777,11 @@ unicode-property-aliases-ecmascript@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/unicode-property-aliases-ecmascript/-/unicode-property-aliases-ecmascript-2.0.0.tgz"
   integrity sha512-5Zfuy9q/DFr4tfO7ZPeVXb1aPoeQSdeFMLpYuFebehDAhbuevLs5yxSZmIFN1tP5F9Wl4IpJrYojg85/zgyZHQ==
+
+uninstall@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/uninstall/-/uninstall-0.0.0.tgz#103e6e37e9c52ec857542cd259023d71c7a3fb2b"
+  integrity sha1-ED5uN+nFLshXVCzSWQI9ccej+ys=
 
 union-value@^1.0.0:
   version "1.0.1"

@@ -1,8 +1,4 @@
-## laptop inventory Management Website 
-### Live Site :https://laptop-warehouse-managem-7c512.web.app/ 
-# Server Site Code Link :https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-SShipon.git
 
-* This is laptop inventory Management Website 
 * This Website Has lot of feature 
 * 1. This Website has Add Item Section and you can add your Items using add item section
 * 2. And You Can see your Added Products also you can Deleted Your Items 
@@ -30,3 +26,4 @@
 * react-bootstrap
 * react-revel
 * react-router-dom
+* react typeWriter
