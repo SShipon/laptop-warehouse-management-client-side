@@ -1,7 +1,9 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import useTitle from '../../Hooks/useTitle.jsx';
 import'./About.css'
 const About = () => {
+    useTitle('About')
     return (
         <Container>
             <Row className='d-flex align-items-center my-5'>

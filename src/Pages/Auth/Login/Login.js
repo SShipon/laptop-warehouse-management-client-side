@@ -13,8 +13,10 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import Loding from "../../Loding/Loding";
 import { Col, Container, Row } from "react-bootstrap";
 import LoginAnimation from "../LoginAnimation/LoginAnimation.jsx";
+import useTitle from "../../../Hooks/useTitle.jsx";
 
 const Login = () => {
+  useTitle('Login')
   const [userInfo, setUserInfo] = useState({
     email: "",
     password: "",

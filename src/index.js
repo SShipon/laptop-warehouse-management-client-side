@@ -1,4 +1,5 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App";
@@ -14,7 +15,5 @@ root.render(
   </BrowserRouter>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+/* this is hello i am shipon form comilla is very nice zone how dow you dow in my fine you most like you html css javascript node.js mongodb express react.js redux tailwind css react bootstrap next.js typeScript sass Mui github vscode visual studio code thanks you coder and  */
 reportWebVitals();

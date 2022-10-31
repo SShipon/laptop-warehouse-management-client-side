@@ -7,9 +7,11 @@ import { ToastContainer, toast } from 'react-toastify';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Col, Container, Row } from 'react-bootstrap';
 import RegisterAnimation from '../RegisterAnimation/RegisterAnimation.jsx';
+import useTitle from '../../../Hooks/useTitle.jsx';
 
 
 const Signup = () => {
+    useTitle('SignUp')
     const [userInfo, setUserInfo] = useState({
         email: "",
         password: "",

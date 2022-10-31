@@ -1,6 +1,8 @@
 import React from 'react';
 import {  Col, Container, Row } from 'react-bootstrap';
+import useTitle from '../../Hooks/useTitle.jsx';
 const Blog = () => {
+  useTitle('Blog')
     return (
         <>
         <Container>
