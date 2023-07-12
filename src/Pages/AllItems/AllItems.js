@@ -15,7 +15,8 @@ const AllItems = ({item,handleDelete}) => {
                 <h5 className='fw-bold'>{name}</h5>
                 <div className='d-flex align-items-center justify-content-center'>
                     <h5>{price}$</h5>
-                    <button onClick={()=>handleDelete(_id)}>Delete</button>
+                    {/* handle Delete button updated */}
+                    <button disabled onClick={()=>handleDelete(_id)}>Delete</button>
                 </div>
             </div>
         </div>

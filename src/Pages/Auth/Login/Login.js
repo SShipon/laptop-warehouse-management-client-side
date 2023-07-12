@@ -70,7 +70,7 @@ const Login = () => {
 
   useEffect(() => {
     if (user) {
-      const url = "https://hidden-plateau-84306.herokuapp.com/login";
+      const url = "https://laptop-warehouse-management-server-side.onrender.com/login";
       fetch(url, {
         method: "POST",
         body: JSON.stringify({

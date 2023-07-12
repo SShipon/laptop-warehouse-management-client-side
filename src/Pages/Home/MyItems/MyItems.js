@@ -18,7 +18,7 @@ const MyItems = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you sure?");
     if (proceed) {
-      const url = `https://hidden-plateau-84306.herokuapp.com/product/${id}`;
+      const url = `https://laptop-warehouse-management-server-side.onrender.com/product/${id}`;
       fetch(url, {
         method: "DELETE",
       })
@@ -37,7 +37,7 @@ const MyItems = () => {
     const email = user.email;
 
     const getItems = async () => {
-      const url = `https://hidden-plateau-84306.herokuapp.com/myItems?email=${email}`;
+      const url = `https://laptop-warehouse-management-server-side.onrender.com/myItems?email=${email}`;
       try {
         const { data } = await axios.get(url, {
           headers: {

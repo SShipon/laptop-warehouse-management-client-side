@@ -4,7 +4,7 @@ const useItems = () => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch("https://hidden-plateau-84306.herokuapp.com/product")
+    fetch("https://laptop-warehouse-management-server-side.onrender.com/product")
       .then((res) => res.json())
       .then((data) => setItems(data));
   }, []);

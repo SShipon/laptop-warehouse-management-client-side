@@ -16,7 +16,7 @@ const AddITems = () => {
     data.email = user?.email;
 
     console.log(data);
-    const url = `https://hidden-plateau-84306.herokuapp.com/product`;
+    const url = `https://laptop-warehouse-management-server-side.onrender.com/product`;
     fetch(url, {
       method: "POST",
       headers: {

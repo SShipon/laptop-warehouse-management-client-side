@@ -2,13 +2,13 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 const firebaseConfig = {
-  apiKey:process.env.REACT_APP_apiKey,
-  authDomain:process.env.REACT_APP_authDomain,
-  projectId:process.env.REACT_APP_projectId,
-  storageBucket:process.env.REACT_APP_storageBucket,
-  messagingSenderId:process.env.REACT_APP_messagingSenderId,
-  appId:process.env.REACT_APP_appId,
-  measurementId:process.env.REACT_APP_measurementId,
+  apiKey: "AIzaSyBp9rGIftWyDaWaMIe0i_FXrkcIemRMY3I",
+  authDomain: "laptop-warehouse-managem-7c512.firebaseapp.com",
+  projectId: "laptop-warehouse-managem-7c512",
+  storageBucket: "laptop-warehouse-managem-7c512.appspot.com",
+  messagingSenderId: "525263229208",
+  appId: "1:525263229208:web:ddf1b7d5685158df200e6d",
+  measurementId: "G-H94HR3F9QX"
 };
 
 // Initialize Firebase
